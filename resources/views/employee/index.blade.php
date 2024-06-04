@@ -63,13 +63,15 @@
                                     <td>{{ $employee->DOB }}</td>
                                     <td>{{ $employee->phone }}</td>
                                     <td>
-                                        <a href="{{ route('employee.edit', $employee->id) }}" class="btn btn-primary btn-sm">
-                                            <i class="fa fa-pencil-square-o"></i> Edit
+                                    <a href="{{ route('employee.edit', $employee->id) }}" style="padding:5px; width:100px; height:40px;" class="btn btn-primary btn-sm;">
+                                      <i class="fa fa-pencil-square-o"></i> Edit
                                         </a>
-                                        <form action="{{ route('employee.destroy', $employee->id) }}" method="POST" style="display:inline">
+
+
+                                        <form action="{{ route('employee.destroy', $employee->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm">
+                                            <button type="submit"  style="padding:5px; width:100px; height:40px;" class="btn btn-danger btn-sm">
                                                 <i class="fa fa-trash"></i> Delete
                                             </button>
                                         </form>

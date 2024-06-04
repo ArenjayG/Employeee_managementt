@@ -20,7 +20,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">{{ __('About us') }}</h5>
+                            <h5 class="card-title">{{ __('BSIt') }}</h5>
 
                             <p class="card-text">
                                 {{ __('Sample static text page ') }}
@@ -33,4 +33,6 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+
+    
 @endsection

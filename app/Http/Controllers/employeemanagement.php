@@ -15,7 +15,7 @@ class employeemanagement extends Controller
         // Pass the employees to the view
         return view('employee.index', compact('employees'));
     }
-
+    
     public function store(Request $request)
     {
         // Validate the request input
