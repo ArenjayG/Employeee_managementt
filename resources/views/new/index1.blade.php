@@ -6,9 +6,15 @@
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
+<<<<<<< HEAD
 <!-- <li class="breadcrumb-item">
     <a href="http://127.0.0.1:8000/pages" class="small-box-footer" style="padding: 10px; background-color: blue; color: white; text-decoration: none; display: inline-block;">Add<i class="fas fa-arrow-circle-right" style="margin-left: 5px;"></i></a>
 </li> -->
+=======
+<li class="breadcrumb-item">
+    <a href="http://127.0.0.1:8000/pages" class="small-box-footer" style="padding: 10px; background-color: blue; color: white; text-decoration: none; display: inline-block;">Add<i class="fas fa-arrow-circle-right" style="margin-left: 5px;"></i></a>
+</li>
+>>>>>>> ade8ffb646ca0489a9f206d6b4c38e5bf80ec735
 
 </ol>
 </div>
