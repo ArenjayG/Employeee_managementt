@@ -10,13 +10,13 @@ class employee extends Model
     use HasFactory;
 
     // If your table name is different from the default 'employees'
-    protected $table = 'employees_tbl';
+    protected $table = 'employeees_tbl';
 
     // Specify which fields are mass assignable
     protected $fillable = [
-        'first_name',
-        'last_name',
-        'DOB',
-        'phone'
+        'emp_name',
+        'emp_name2',
+        'password'
+        
     ];
 }

@@ -1,58 +1,55 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <h3 align="left" class="mt-5">BSIT-3A</h3>
+        <h3 align="center" class="mt-5">Employee Management</h3>
         <div class="row">
             <div class="col-md-2">
             </div>
-
-            
-
             <div class="col-md-8">
             <div class="form-area">
-
-                <form method="POST" action="{{ route('employee.store') }}">
-                    @csrf
+                <form method="POST" action="{{ route('employee.update', $employee->id) }}">
+                {!! csrf_field() !!}
+                  @method("PATCH")
                     <div class="row">
                         <div class="col-md-6">
                             <label>Name</label>
-                            <input type="text" class="form-control" name="emp_name">
+                            <input type="text" class="form-control" name="emp_name" value="{{ $employee->emp_name }}">
                         </div>
                         <div class="col-md-6">
                             <label>Email</label>
-                            <input type="text" class="form-control" name="emp_name2">
+                            <input type="text" class="form-control" name="emp_name2" value="{{ $employee->emp_name2 }}">
                         </div>
+
                         <div class="col-md-6">
                             <label>Password</label>
-                            <input type="password" class="form-control" name="password">
+                            <input type="password" class="form-control" name="password" value="{{ $employee->password}}">
                         </div>
+
                         <div class="col-md-6">
-                            <label>Confirme password</label>
-                            <input type="password" class="form-control" name="password">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control" name="password" value="{{ $employee->password}}">
                         </div>
-                    </div>
+                      
+                                   
+                    
 
-
-                    <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12 mt-3">
-                        <a href="http://127.0.0.1:8000/new-"><input type="submit" class="btn btn-info" value="Register"></a>
+                            <input type="submit" class="btn btn-primary" value="Update" >
                         </div>
                     </div>
                 </form>
             </div>
-            
             </div>
         </div>
     </div>
-  
 @endsection
 @push('css')
     <style>
         .form-area{
             padding: 20px;
             margin-top: 20px;
-              background-color:#FFFF00;
+            background-color:#b3e5fc;
         }
         .bi-trash-fill{
             color:red;
@@ -63,8 +60,5 @@
             font-size: 18px;
             margin-left: 20px;
         }
-        
     </style>
-    
 @endpush
-

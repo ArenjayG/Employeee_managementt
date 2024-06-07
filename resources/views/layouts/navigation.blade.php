@@ -1,4 +1,3 @@
-
 <!-- Sidebar -->
 <div class="sidebar">
     <!-- Sidebar user panel (optional) -->
@@ -21,35 +20,30 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a href="{{ route('employee.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>
-                    <p>
-                        {{ __('User') }}
-                    </p>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="{{ route('about') }}" class="nav-link">
-                    <i class="nav-icon far fa-address-card"></i>
-                    <p>
-                        {{ __('BSIT 3A') }}
-                    </p>
-                </a>
-            </li>
-
 
             
             <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-circle nav-icon"></i>
+                <a href="{{ route('new.index1') }}" class="nav-link">
+                    <i class="nav-icon far fa-address-card"></i>
                     <p>
-                        {{ __('User Management') }}
-                        
+                        {{ __('Employee Management') }}
                     </p>
                 </a>
-               
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ route('pages.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        {{ __('About') }}
+                    </p>
+                </a>
+            </li>
+
+
+
+            
+                        </a>
                     </li>
                 </ul>
             </li>

@@ -1,8 +1,19 @@
 @extends('layouts.app')
 @section('content')
-<table class="table mt-5">
-    <a href="http://127.0.0.1:8000/pages" class="small-box-footer">Add<i class="fas fa-arrow-circle-right"></i></a>
-</table>
+<div class="row mb-2">
+<div class="col-sm-6">
+<h1 class="m-0">Dashboard</h1>
+</div>
+<div class="col-sm-6">
+<ol class="breadcrumb float-sm-right">
+<li class="breadcrumb-item">
+    <a href="http://127.0.0.1:8000/pages" class="small-box-footer" style="padding: 10px; background-color: blue; color: white; text-decoration: none; display: inline-block;">Add<i class="fas fa-arrow-circle-right" style="margin-left: 5px;"></i></a>
+</li>
+
+</ol>
+</div>
+</div>
+
 
 <table class="table mt-5">
                     <thead>
@@ -31,11 +42,13 @@
                             </button>
                             </a>
                             
-                            <form action="{{ route('employee.destroy', $employee->id) }}" method="POST" style ="display:inline">
-                             @csrf
-                            @method('DELETE')
-                           
-                            </form>
+                    <form action="{{ route('employee.destroy', $employee->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                    </button>
+                </form>
                             </td>
                           </tr>
                         @endforeach

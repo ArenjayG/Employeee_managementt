@@ -15,9 +15,12 @@ return new class extends Migration
     {
         Schema::create('employees_tbl', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->date('DOB');
+            $table->string('emp_name');
+            $table->string('emp_name2');
+            $table->string('password');
+           $table->string('first_name');
+           $table->string('last_name');
+           $table->date('DOB');
             $table->string('phone')->nullable();
             $table->timestamps();
         });
