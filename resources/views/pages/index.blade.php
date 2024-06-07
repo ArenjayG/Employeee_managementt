@@ -47,7 +47,7 @@
     <div class="container">
 
     
-        <h3 align="left" class="mt-5">employye managemnt</h3>
+        <h3 align="left" class="mt-5">Robley Management</h3>
         <div class="row">
             <div class="col-md-2">
             </div>
@@ -73,7 +73,7 @@
                             <input type="password" class="form-control" name="password"required>
                         </div>
                         <div class="col-md-6">
-                            <label>Confirm password</label>
+                            <label>Confirm Password</label>
                             <input type="password" class="form-control" name="password" required>
                         </div>
                     </div>
